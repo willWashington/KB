@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace KBMain
 {
@@ -11,7 +9,7 @@ namespace KBMain
         public CodeSnippets()
         {
 
-        }
+        }       
 
         //prop+tab+tab - properties allow access inside a private field
         //scope: class
