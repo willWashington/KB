@@ -37,5 +37,13 @@ namespace KBMain
 
             #endregion
         }
+        
+        //testm+tab+tab - creates a test method -> requires Microsoft.VisualStudio.TestTools.UnitTesting namespace
+        //scope: class
+        [TestMethod]
+        public void MyTestMethod()
+        {
+
+        }      
     }
 }
