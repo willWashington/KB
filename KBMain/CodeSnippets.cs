@@ -11,10 +11,12 @@ namespace KBMain
 
         }       
 
-        //prop+tab+tab - properties allow access inside a private field
+        //prop+tab+tab - properties allow access inside a private field - creates a single line property
+        //propfull+tab+tab - creates a full property section
         //scope: class
         public int MyProperty { get; set; }
 
+        
 
         private void CodeSnippetList()
         {
