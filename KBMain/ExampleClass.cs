@@ -41,6 +41,29 @@ namespace KBMain
         //define a property for each class field
         #endregion
 
+        #region Class Constructors
+        public ExampleClass()
+        {            
+        }
+        //Constructors are special methods inside the class that is automatically executed
+        //-> everytime you create an instance of the class.
+        //Constructors must be named with the same name as the class
+        //Default constructor has no parameters
+        //Not Required
+
+        public ExampleClass(string className) : this()
+        {
+            className = className;
+        }
+        //Paramaterized constructors allow you to initialize each instance with data
+        //Defines parameters to initialize the object instance 
+        //The :this() syntax invokes the default constructor
+        //This constructor calls the default ( :this() ) constructor first to do any default constructing
+        //This is called constructor chaining
+        #endregion
+
+
+
         #region Class Methods
         public decimal CalculateQuantityOnHand()
         {
