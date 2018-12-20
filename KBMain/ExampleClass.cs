@@ -43,7 +43,7 @@ namespace KBMain
 
         #region Class Constructors
         public ExampleClass()
-        {            
+        {
         }
         //Constructors are special methods inside the class that is automatically executed
         //-> everytime you create an instance of the class.
@@ -53,7 +53,7 @@ namespace KBMain
 
         public ExampleClass(string className) : this()
         {
-            className = className;
+            ClassName = className;
         }
         //Paramaterized constructors allow you to initialize each instance with data
         //Defines parameters to initialize the object instance 
@@ -76,7 +76,7 @@ namespace KBMain
         #endregion
 
         /*
-         *| Do:
+         *| Class Do's:
          *| Define a meaningful name                            |
          *| Use a noun when naming classes                      |
          *| Use PascalCasing when naming                        |
@@ -87,12 +87,21 @@ namespace KBMain
          *| Add properties at top of class                      |
          *| Each class should have its own unit test file       |
          *| ------------------------------                      |
-         *| Do Not:                                             |
+         *| Class Do Not's:                                             |
          *| Use Abbreviations in the name                       |
          *| Use Prefixes in the name                            |
          *| Use Underscores in the name                         |
          *| Create large classes                                |
          * */
+
+
+        /*
+         *| Constructor Do's:                                           |  
+         *| Consider providing a default constructor                    |
+         *| Consider providing a parameterized constructor              | 
+         *| Name the parameters the same name as the related properties |
+         * */
+
     }
 
     public class ExampleClass2
