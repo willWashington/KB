@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+//you can use the "using static" syntax to reference a specific method inside of a class
+//references must be one way - if class X is using class Y, class Y cannot be using class X
 
+#region FAQ
 //what is the difference between a property and a method:
     //properties are the gate-keepers, providing access to data
     //methods are the operations
@@ -18,7 +21,21 @@ using System.Text;
 //what is the difference between static and singleton?
     //a static class cannot be instantiated
     //a singleton can instantiate itself and provide that instance to other code
+//what is the difference between a class and an object?
+    //a class represents things of the same type - an object represents one specific thing
+    //a class defines the template of that type
+    //an object defines one thing created from that template
+    //class is created at development time by creating code
+    //object is created at runtime with new keyword
 
+//Object Initialization Best Practices
+    //it's best to properties when populating an object from database values - using properties makes it easier to convert data from database types
+    //setting properties is also best when modifying property values
+
+    //paramaterized constructors are best used when setting the basic set of properties
+
+    //object initializers are best used when readability is important and when initializing a subset or superset of properties
+#endregion
 
 /*
  * | Namespace Do:                              |
