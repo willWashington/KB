@@ -8,7 +8,10 @@ namespace KBMain
         //scope: class
         public CodeSnippets()
         {
-
+            // ?. if the variable on the left side of the operator is null, the expression is null
+            // and the expression is not processed any further
+            //if null then null if not then dot
+            var companyName = currentProduct?.ProductVendor?.CompanyName;
         }       
 
         //prop+tab+tab - properties allow access inside a private field - creates a single line property

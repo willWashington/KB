@@ -40,14 +40,42 @@ namespace KBMain
     public class ExampleClass
     #endregion
     {
-        #region Class Fields
+        /*
+     * | Mullable Types Do:                         |
+     * | Use nullable on simple types to            |
+     * | distinguise between not set and default    |
+     * | Use properties of the type as needed       |
+     * | -----------------                          |
+     * | Namespace Do Not:                          |
+     * | Do not use if not necessary                |     
+     * */
+
+        #region Class Fields aka Backing Fields, Including Const & Readonly
+        public const float pi = 3.14f;
+        public readonly decimal MinimumPrice = 0;
         private int productId;
         private string productName;
+        private decimal? cost; //this is a nullable type 
+
         //class fields are simply the variables on the class scope
         //the field holds the data that the class is responsible for
         //define a property for each field in the class
         //also called backing fields because they provide the in memory storage for the
         //-> data exposed by the properties
+        //nullable types allow (varName?) you to have null to distinguish between 0 and nothing, etc
+        //const variables are constant - they can never change
+        //const variables must be a number, boolean, or string
+        //const variables are always static
+        //const variables must be assigned by the developer - they cannot be assigned via external file or from within the code base
+        //think of a const variable as a compile time constant value
+        //readonly variables hold a value that is initialized and then never changed
+        //readonly variables must be initialized in the declaration or in a constructor
+        //readonly can be any data type
+        //readonly can be static if chosen
+        //no other code can modify the value of a readonly field
+        //think of a read-only field as a runtime constant value
+
+        
         #endregion
 
         #region Class Properties
