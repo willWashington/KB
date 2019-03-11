@@ -172,6 +172,22 @@ namespace KBMain
 
     #endregion
 
+    #region Read Txt File
+    //public static void GasStationListParser()
+    //{
+    //    List<string> listOfGasStations = new List<string>();
+    //    var contents = File.ReadLines("C:\\Users\\NEO\\source\\repos\\_Banker\\_Banker\\gasStationList.txt");
+    //    foreach (var item in contents)
+    //    {
+    //        Console.WriteLine($"***********{item}");
+
+    //        listOfGasStations.Add(item);
+    //    }
+    //}
+    #endregion
+
+
+
 
 }
 
